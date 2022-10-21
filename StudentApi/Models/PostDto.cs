@@ -2,7 +2,7 @@
 
 namespace StudentApi.Models
 {
-    public class UserRequest
+    public class PostDto
     {
 
         public string Name { get; set; }

@@ -10,6 +10,7 @@ builder.Services.AddDbContext<StudentContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("dbconnection"));
 });
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
